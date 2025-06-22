@@ -4,8 +4,15 @@
     border-bottom: 1px solid $gray-200;
     background-color: white;
     font-family: $headings-font-family;
+    display: flex;
+    align-items: center;
+    min-height: 120px;
 
     .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px; // spacing between icon and text if you add it later
+        padding: 0;
         font-weight: 800;
         color: $gray-800;
     }
@@ -21,8 +28,9 @@
     .navbar-nav {
         >li.nav-item {
             >a {
-                font-size: 12px;
-                font-weight: 800;
+                font-size: 1.1rem;
+                font-weight: 600;
+                padding: 0.1rem;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
@@ -34,7 +42,7 @@
         background: transparent;
 
         .navbar-brand {
-            padding: 10px 20px;
+            padding: 0;
             color: $white;
 
             &:focus,
