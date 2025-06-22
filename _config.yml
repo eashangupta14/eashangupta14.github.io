@@ -6,11 +6,8 @@ baseurl:            ""
 url:                "https://eashangupta14.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+github_username:    eashangupta14  
+linkedin_username:  eashan-gupta
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
