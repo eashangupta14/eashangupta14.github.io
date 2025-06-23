@@ -4,17 +4,24 @@
     border-bottom: 1px solid $gray-200;
     background-color: white;
     font-family: $headings-font-family;
-    display: flex;
-    align-items: center;
+    /* Flex-box centring now handled by .container-fluid in the HTML */
     min-height: 120px;
 
     .navbar-brand {
+        /* If you plan to add text beside the icon, re-enable the gap below */
+        /* gap: 0.625rem; */
         display: flex;
         align-items: center;
-        gap: 10px; // spacing between icon and text if you add it later
+ 
         padding: 0;
         font-weight: 800;
         color: $gray-800;
+    }
+
+    /* Cap Lottie animation size so the bar never gets too tall */
+    .robot-logo {
+        width: 120px;
+        height: 120px;
     }
 
     .navbar-toggler {
@@ -26,6 +33,7 @@
     }
 
     .navbar-nav {
+        margin-left: auto;
         >li.nav-item {
             >a {
                 font-size: 1.1rem;
@@ -82,7 +90,7 @@
         &.is-fixed {
             /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
-            top: -67px;
+            top: -60px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
